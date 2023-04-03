@@ -1,7 +1,9 @@
 const about = document.querySelector('#about')
 const contact = document.querySelector('#contact')
+const skills = document.querySelector('#skills')
 const aboutContent = document.querySelector('#about-content')
 const contactContent = document.querySelector('#contact-content')
+const contactContent = document.querySelector('#skills-content')
 
 
 
@@ -27,6 +29,24 @@ about.addEventListener('click', () => {
 contact.addEventListener('click', () => {
   const contactBox = new WinBox({
     title: 'Contact Me',
+    width: '600px',
+    height: '600px',
+    top: 150,
+    right: 50,
+    bottom: 50,
+    left: 50,
+    mount: contactContent,
+    onfocus: function () {
+      this.setBackground('#00aa00')
+    },
+    onblur: function () {
+      this.setBackground('#777')
+    },
+  })
+})
+skills.addEventListener('click', () => {
+  const contactBox = new WinBox({
+    title: 'Skills',
     width: '600px',
     height: '600px',
     top: 150,
