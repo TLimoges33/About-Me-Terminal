@@ -1,7 +1,7 @@
 const about = document.querySelector('#about')
-const contact = document.querySelector('#contact')
+const contact = document.querySelector('#skills')
 const aboutContent = document.querySelector('#about-content')
-const contactContent = document.querySelector('#contact-content')
+const contactContent = document.querySelector('#skills-content')
 
 
 
@@ -42,4 +42,3 @@ contact.addEventListener('click', () => {
     },
   })
 })
-
